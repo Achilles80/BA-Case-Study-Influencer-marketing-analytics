@@ -1,17 +1,11 @@
-"""Mask personal contact details (email addresses and phone numbers) in the raw data files.
+"""Mask email addresses and phone numbers in the raw data files.
 
-Some creators put a business email address or phone number in their video descriptions. The case study
-instructions ask for personal information to be removed or anonymised before submission, so this script
-replaces every email address and phone number with asterisks of the same length.
-
-Keeping the length the same means none of the features derived from the text change (description length,
-link count, hashtags, sponsor mentions, the title features and tag count), so the analysis results are
-identical before and after masking. The script checks this for every row and refuses to write if any
-feature would change.
+Each match is replaced with asterisks of the same length, so the text features
+used in the notebook stay the same.
 
 Usage:
-    python scripts/anonymize_raw.py            # dry run: report what would be masked
-    python scripts/anonymize_raw.py --write    # mask in place and write report/anonymization_summary.csv
+    python scripts/anonymize_raw.py            # dry run
+    python scripts/anonymize_raw.py --write    # mask the files in place
 """
 import argparse
 import csv
@@ -40,7 +34,7 @@ def mask(text):
 
 
 def features(column, text):
-    """The model features the notebook derives from each text column."""
+    """Text features computed in the notebook."""
     if column == "description":
         return (len(text), len(re.findall(r"https?://", text)), bool(re.search(r"#\w+", text)),
                 bool(SPONSOR.search(text)))

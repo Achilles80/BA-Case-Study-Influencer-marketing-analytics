@@ -1,12 +1,6 @@
-"""Fetch each collected video's declared language into a separate raw file.
+"""Get the audio language of each collected video.
 
-youtube_api.csv has no language field, and search.list's relevanceLanguage=en
-is only a ranking hint - it still surfaces Malayalam, Hindi and Turkish
-channels. Title script alone misses languages written in Latin script, so this
-pulls snippet.defaultAudioLanguage, which the uploader sets explicitly.
-
-Written to data/raw/video_language.csv and joined on `id`, so the existing raw
-export stays untouched. Costs 1 unit per 50 videos. Resumes on re-run.
+Saved to data/raw/video_language.csv and joined on id in the notebook.
 
 Usage:
     python scripts/fetch_video_language.py
@@ -52,8 +46,7 @@ def main():
                 print(f"  chunk {i // 50} failed, re-run to retry: {e}")
                 continue
             got = {it["id"]: it.get("snippet", {}) for it in j.get("items", [])}
-            # write every requested id, even deleted/private ones, so a re-run
-            # doesn't keep paying for videos that will never come back
+            # save every id, including deleted ones, so a re-run skips them
             for vid in chunk:
                 sn = got.get(vid, {})
                 w.writerow({"id": vid,

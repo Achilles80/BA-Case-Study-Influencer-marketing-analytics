@@ -1,18 +1,13 @@
-"""Per-channel quality audit, run before locking the dataset.
+"""Check each channel before finalising the dataset.
 
-Flags channels that would distort the analysis rather than dropping them, so
-the exclusion rules can be chosen deliberately and written into the notebook.
-
-  NON_ENGLISH  most videos declare a non-English audio language, or most
-               titles are in a non-Latin script
-  SHORTS_ONLY  over 80% of collected videos are 180s or shorter
-  FEW_VIDEOS   fewer than 50 videos collected
-  CATEGORY?    dominant YouTube category is unusual for the assigned niche
-               (soft flag - niche came from a search keyword, not a label)
+Flags:
+  NON_ENGLISH  mostly non-English videos
+  SHORTS_ONLY  over 80% of videos are 180 s or shorter
+  FEW_VIDEOS   fewer than 50 videos
+  CATEGORY?    main YouTube category does not fit the niche
 
 Usage:
     python scripts/audit_channels.py
-Writes report/channel_audit.csv.
 """
 import unicodedata
 from pathlib import Path

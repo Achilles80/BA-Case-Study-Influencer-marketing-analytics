@@ -1,15 +1,12 @@
-"""Collect YouTube video data via the official Data API v3.
+"""Collect video data for each channel using the YouTube Data API v3.
 
-Replaces the Apify actor, which caps Free Plan accounts at 10 items per run.
-
-Quota: 1 unit per channels/playlistItems/videos request, so roughly 7 units
-per channel at 150 videos. The free daily allowance is 10,000 units.
-search.list is the exception at 100 units - see discover_channels.py.
+Most requests cost 1 quota unit (search costs 100). The free limit is 10,000
+units per day.
 
 Usage:
-    python scripts/collect_youtube.py                  # 46 videos/channel
+    python scripts/collect_youtube.py                  # 46 videos per channel
     python scripts/collect_youtube.py --videos 150
-    python scripts/collect_youtube.py --limit 3        # try 3 channels first
+    python scripts/collect_youtube.py --limit 3        # test on 3 channels
 """
 import argparse
 import csv
@@ -55,11 +52,11 @@ class Quota:
 
 
 class ApiError(Exception):
-    """A per-channel failure. Skip that channel, keep the run going."""
+    """Error for one channel. The run skips it and continues."""
 
 
 def get(endpoint, key, cost=1, **params):
-    """GET one API endpoint. `cost` is its quota price - 1 for most, 100 for search."""
+    """Call one API endpoint and add its cost to the quota count."""
     params["key"] = key
     last = ""
     for attempt in range(4):
@@ -73,8 +70,7 @@ def get(endpoint, key, cost=1, **params):
                 sys.exit(f"\nDAILY QUOTA EXHAUSTED after {Quota.used} units. "
                          f"Resets at midnight Pacific. Re-run to continue - "
                          f"already-collected channels are skipped.")
-            # Key disabled, API not enabled, referrer blocked - affects every
-            # channel, so there is no point continuing.
+            # key or API setup problem, so stop the whole run
             sys.exit(f"\nAPI refused the request ({r.status_code}): {last}")
         if r.status_code == 404:
             break
@@ -83,7 +79,7 @@ def get(endpoint, key, cost=1, **params):
 
 
 def log_run(batch, channels, rows, notes=""):
-    """Append one line to scrape_log.csv - the collection evidence for the report."""
+    """Add a row to scrape_log.csv for this run."""
     with open(LOG, "a", encoding="utf-8", newline="") as f:
         csv.writer(f).writerow([datetime.now(timezone.utc).date(), "youtube-data-api-v3",
                                 batch, channels, rows, f"{Quota.used} units", notes])

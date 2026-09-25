@@ -1,14 +1,6 @@
-"""Page further back through upload history for channels short on long-form videos.
+"""Collect older long-form videos for channels whose recent uploads are mostly Shorts.
 
-The analysis uses long-form videos only (> 180 s). Some channels had almost
-none among their 150 most recent uploads - Vsauce had 1 - because their recent
-output is nearly all Shorts. This pass keeps paging back through each such
-channel's uploads, up to MAX_UPLOADS, collecting long-form videos until the
-channel has TARGET_LONG of them.
-
-Writes a separate raw file, data/raw/youtube_api_deep.csv, so the first
-collection stays untouched. Each row carries its own defaultAudioLanguage and
-collectedAt date. Resumes on re-run.
+Saved to data/raw/youtube_api_deep.csv so the main file is not changed.
 
 Usage:
     python scripts/deepen_long_form.py --dry-run   # list channels, no API calls
@@ -35,7 +27,7 @@ TARGET_LONG = 40      # raw long-form videos wanted per channel, before cleaning
 MAX_UPLOADS = 600     # how far back to page before giving up
 SHORT_MAX = 180       # seconds; <= this is treated as a Short
 
-# Excluded by the language rule in notebook section 2.2 - not worth topping up.
+# removed later by the language filter, so skip them
 NON_ENGLISH = {"@jrstudiomalayalam", "@mrsyumtum", "@parulmahaajan1", "@reshmifit-od3nw"}
 
 FIELDS = COLUMNS + ["defaultAudioLanguage", "collectedAt"]

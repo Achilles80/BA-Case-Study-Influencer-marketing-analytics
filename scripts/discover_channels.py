@@ -1,23 +1,10 @@
-"""Find real small and mid-size channels per niche to balance subscriber tiers.
+"""Find smaller channels in each niche so every subscriber tier has enough channels.
 
-The seed list in channel_list.csv is 85/91 channels above 1M subscribers, which
-makes "does subscriber count predict engagement?" close to untestable. This
-script searches recent videos per niche, looks up the channels behind them,
-and keeps those in the under-represented tiers.
-
-Selection rules (report these in the methodology):
-  - found via search.list on niche keywords, videos published in the last
-    180 days, regionCode=US, relevanceLanguage=en
-  - subscriber count visible, and within the tier bounds below
-  - at least MIN_VIDEOS uploads, so ~150 videos per channel is achievable
-  - has an @handle, not already in the list, not an auto-generated "- Topic"
-  - taken in search-relevance order until the per-niche quota is filled
-
-Quota: search.list costs 100 units per page, so this is the expensive step.
-The script stops searching a niche as soon as its targets are met.
+search.list costs 100 quota units per call, so the search for a niche stops
+once it has enough channels.
 
 Usage:
-    python scripts/discover_channels.py --dry-run     # print, don't write
+    python scripts/discover_channels.py --dry-run     # print only
     python scripts/discover_channels.py
 """
 import argparse
