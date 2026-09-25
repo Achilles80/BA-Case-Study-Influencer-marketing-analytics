@@ -1,0 +1,151 @@
+niche,channel_name,channel_handle,approx_subscribers,source
+tech,Marques Brownlee,@mkbhd,21000000,seed
+tech,Linus Tech Tips,@LinusTechTips,16000000,seed
+tech,Mrwhosetheboss,@Mrwhosetheboss,20000000,seed
+tech,Unbox Therapy,@UnboxTherapy,24000000,seed
+tech,Austin Evans,@austinevans,5500000,seed
+tech,Dave2D,@Dave2D,4000000,seed
+tech,JerryRigEverything,@JerryRigEverything,8500000,seed
+tech,NetworkChuck,@NetworkChuck,4500000,seed
+tech,Technology Connections,@TechnologyConnections,3000000,seed
+tech,ThioJoe,@ThioJoe,3500000,seed
+gaming,Markiplier,@markiplier,37000000,seed
+gaming,Jacksepticeye,@jacksepticeye,31000000,seed
+gaming,DanTDM,@DanTDM,29000000,seed
+gaming,LazarBeam,@LazarBeam,22000000,seed
+gaming,Ninja,@Ninja,24000000,seed
+gaming,Aphmau,@Aphmau,20000000,seed
+gaming,CallMeKevin,@CallMeKevin,3000000,seed
+gaming,Let's Game It Out,@LetsGameItOut,8000000,seed
+gaming,RTGame,@RTGame,3000000,seed
+gaming,Wanderbots,@Wanderbots,800000,seed
+beauty,James Charles,@jamescharles,23000000,seed
+beauty,NikkieTutorials,@NikkieTutorials,14000000,seed
+beauty,Hyram,@Hyram,4500000,seed
+beauty,Jackie Aina,@jackieaina,3500000,seed
+beauty,Bailey Sarian,@BaileySarian,7000000,seed
+beauty,Patrick Starrr,@patrickstarrr,4500000,seed
+beauty,KathleenLights,@KathleenLights,4000000,seed
+beauty,Manny MUA,@MannyMua733,4500000,seed
+beauty,Robert Welsh,@RobertWelsh,1000000,seed
+fitness,Athlean-X,@athleanx,14000000,seed
+fitness,Jeff Nippard,@JeffNippard,4500000,seed
+fitness,Chloe Ting,@ChloeTing,25000000,seed
+fitness,Pamela Reif,@PamelaRf1,9500000,seed
+fitness,FitnessBlender,@FitnessBlender,6800000,seed
+fitness,Jeremy Ethier,@JeremyEthier,6000000,seed
+fitness,MadFit,@MadFit,9000000,seed
+fitness,Yoga With Adriene,@yogawithadriene,13000000,seed
+fitness,ScottHermanFitness,@ScottHermanFitness,2800000,seed
+fitness,Natacha Oceane,@natachaoceane,1500000,seed
+food,Joshua Weissman,@JoshuaWeissman,10000000,seed
+food,Bon Appetit,@bonappetit,6500000,seed
+food,Nick DiGiovanni,@NickDiGiovanni,25000000,seed
+food,Ethan Chlebowski,@EthanChlebowski,2500000,seed
+food,Adam Ragusea,@aragusea,2700000,seed
+food,Gordon Ramsay,@gordonramsay,21000000,seed
+food,Food Wishes,@foodwishes,4500000,seed
+food,Maangchi,@Maangchi,6500000,seed
+finance,Graham Stephan,@GrahamStephan,4800000,seed
+finance,Andrei Jikh,@AndreiJikh,2300000,seed
+finance,Meet Kevin,@MeetKevin,2100000,seed
+finance,The Plain Bagel,@ThePlainBagel,1000000,seed
+finance,Ben Felix,@BenFelixCSI,400000,seed
+finance,Two Cents,@TwoCentsPBS,1000000,seed
+finance,Nate O'Brien,@NateOBrien,1400000,seed
+finance,Minority Mindset,@MinorityMindset,1500000,seed
+finance,Humphrey Yang,@humphrey,1000000,seed
+travel,Kara and Nate,@KaraandNate,4000000,seed
+travel,Drew Binsky,@drewbinsky,5000000,seed
+travel,Yes Theory,@YesTheory,9000000,seed
+travel,Lost LeBlanc,@LostLeBlanc,2000000,seed
+travel,Eva zu Beck,@EvazuBeck,1600000,seed
+travel,Mark Wiens,@MarkWiens,10000000,seed
+travel,Bald and Bankrupt,@BaldandBankrupt,4000000,seed
+travel,Sailing La Vagabonde,@SailingLaVagabonde,2000000,seed
+travel,Indigo Traveller,@IndigoTraveller,2500000,seed
+education,Veritasium,@veritasium,17000000,seed
+education,Kurzgesagt,@kurzgesagt,23000000,seed
+education,Vsauce,@Vsauce,22000000,seed
+education,CrashCourse,@crashcourse,16000000,seed
+education,3Blue1Brown,@3blue1brown,7000000,seed
+education,SciShow,@SciShow,8000000,seed
+education,MinutePhysics,@MinutePhysics,5800000,seed
+education,TED-Ed,@TEDEd,20000000,seed
+education,Numberphile,@numberphile,4700000,seed
+education,Steve Mould,@SteveMould,3000000,seed
+fashion,Alex Costa,@AlexCosta,4000000,seed
+fashion,Emma Chamberlain,@emmachamberlain,12000000,seed
+fashion,Best Dressed,@bestdressed,3000000,seed
+fashion,Justine Leconte,@JustineLeconte,1200000,seed
+fashion,Real Men Real Style,@RealMenRealStyle,2000000,seed
+fashion,Tiffany Ferguson,@tiffanyferg,1000000,seed
+fashion,Gentleman's Gazette,@gentlemansgazette,1000000,seed
+lifestyle,Matt D'Avella,@mattdavella,3800000,seed
+lifestyle,Ali Abdaal,@aliabdaal,5500000,seed
+lifestyle,Nathaniel Drew,@NathanielDrew,2000000,seed
+lifestyle,Pick Up Limes,@PickUpLimes,4500000,seed
+lifestyle,Struthless,@Struthless,1500000,seed
+lifestyle,Better Ideas,@BetterIdeas,1800000,seed
+lifestyle,Thomas Frank,@ThomasFrank,3000000,seed
+lifestyle,Jenny Mustard,@JennyMustard,900000,seed
+tech,Matt Talks Tech,@matttalktech,816000,api_search:tech review
+tech,HowToMen,@howtomen,902000,api_search:tech review
+tech,Mark's Tech,@markstech,138000,api_search:tech review
+tech,mattykay,@mattykayy,531000,api_search:tech review
+tech,C. Scott Brown,@cscottbrown,42100,api_search:tech review
+tech,TodayIGrewUP,@todayigrewup,194000,api_search:tech review
+gaming,Rubhen925,@rubhen925,566000,api_search:gameplay walkthrough
+gaming,Zhain Gaming,@zhaingaming,47500,api_search:gameplay walkthrough
+gaming,HGH Horror Games House,@hghhorrorgameshouse,100000,api_search:gameplay walkthrough
+gaming,SR ROWDY 2.0,@srrowdy2,25200,api_search:gameplay walkthrough
+gaming,GamersPrey,@gamersprey,246000,api_search:gameplay walkthrough
+gaming,Shailesh Rathod ,@shaileshrathodyt,580000,api_search:gameplay walkthrough
+beauty,Samantha Harvey,@makeupbysamanthaharvey,179000,api_search:makeup tutorial
+beauty,Emily Heal,@emilyheal,110000,api_search:makeup tutorial
+beauty,Lashay’s Glamz,@lashaysglamz,362000,api_search:makeup tutorial
+beauty,Rhony Claire 💋,@rhonyclaire,109000,api_search:makeup tutorial
+beauty,Jackie Wyers,@jackiewyers,981000,api_search:makeup tutorial
+beauty,Aditya Madiraju,@adityamadiraju,688000,api_search:makeup tutorial
+fitness,Tess & Yoann,@tessandyoann,227000,api_search:home workout
+fitness,Christou Bodygoal ,@christoubodygoal,63800,api_search:home workout
+fitness,HOMEWORKOUT,@workoutstart,648000,api_search:home workout
+fitness,SeniorShape Fitness,@seniorshapefitness,874000,api_search:home workout
+fitness,Reshmi Fit,@reshmifit-od3nw,177000,api_search:home workout
+fitness,AlexandriaGetsFit,@alexandria_s1222,10000,api_search:home workout
+food,Love Kari Cooking,@lovekaricooking,945000,api_search:easy recipe
+food,YamYam Foods5,@yamyamfoods5,55600,api_search:easy recipe
+food,Rahilas Cookhouse,@rahilascookhouse,101000,api_search:easy recipe
+food,mrsyumtum ,@mrsyumtum,140000,api_search:easy recipe
+food,everydayisfeastday,@everydayisfeastday,333000,api_search:easy recipe
+food,AmysDailyRecipes,@amysdailyrecipes,204000,api_search:easy recipe
+finance,Personal Finance with Leila - Debt Over It,@personalfinancewithleila,66500,api_search:personal finance
+finance,The Interview,@theinterviewpodcast,247000,api_search:personal finance
+finance,Zubair Trabzada | AI Workshop,@ai-gptworkshop,160000,api_search:personal finance
+finance,The Money Guy Show,@moneyguyshow,700000,api_search:personal finance
+finance,Tom - Lazy Investor,@1millionwithin5years,95900,api_search:personal finance
+finance,Rob Berger,@rob_berger,298000,api_search:personal finance
+travel,Paige Secosky,@paigesecosky,857000,api_search:travel vlog
+travel,Jada Waters,@valuejada,161000,api_search:travel vlog
+travel,Kritika Goel,@kritikagoel,729000,api_search:travel vlog
+travel,Lynette Yoder,@lynetteyoder,162000,api_search:travel vlog
+travel,Neslihan Can ,@neslihancan,13400,api_search:travel vlog
+travel,AllyiahsFace,@allyiahsface,934000,api_search:travel vlog
+education,Cosmo Explains,@cosmoexplainsyt,27700,api_search:science explained
+education,Some Guy Who Knows Stuff,@someguywhoknowsstuff,124000,api_search:science explained
+education,Life According to Science,@lifeaccordingtoscience,80700,api_search:science explained
+education,Think Story,@thinkstory,829000,api_search:science explained
+education,JR STUDIO Sci-Talk Malayalam,@jrstudiomalayalam,677000,api_search:science explained
+education,Science Shorts,@scienceshorts,364000,api_search:science explained
+fashion,Bronniee,@bronnieeday,313000,api_search:fashion haul
+fashion,Nita Danielle,@nitadanielle,124000,api_search:fashion haul
+fashion,Marnie Goldberg,@msgoldgirl,359000,api_search:fashion haul
+fashion,Josphine d_beautyengineer,@d_beautyengineer,14800,api_search:fashion haul
+fashion,Parul Mahaajan 1,@parulmahaajan1,163000,api_search:fashion haul
+fashion,EJWAYY,@ejwayy,239000,api_search:fashion haul
+lifestyle,siena,@sienarosee,95400,api_search:day in my life
+lifestyle,ava rae,@avarae,476000,api_search:day in my life
+lifestyle,Elaina Michelle,@elainamich,652000,api_search:day in my life
+lifestyle,Journi Carr ,@journicarr,104000,api_search:day in my life
+lifestyle,Annika,@annikastevie,230000,api_search:day in my life
+lifestyle,Brenda Anton,@brendaantonn,157000,api_search:day in my life
