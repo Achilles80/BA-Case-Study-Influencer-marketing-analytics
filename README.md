@@ -1,7 +1,9 @@
 # Influencer Marketing Analytics: Predicting High-Engagement YouTube Campaigns for Marketing Investment Optimization
 
 23CSE452 - Business Analytics | Individual Case Study
+
 Adithya Ajay | Roll No: CB.SC.U4CSE23102 | CSE-B
+
 Business domain: Social Media Marketing
 
 ## Problem Statement
